@@ -3,26 +3,23 @@
 **Dono:** Gleyber (PO). **Executor:** qualquer IA com acesso ao Meta Ads e ao GHL.
 
 ## Feito
-- [x] Artes de feed e stories subidas na conta de anúncios 2590014361504349
-- [x] Campanha `120255757614340699` e conjunto `120255757615880699` em rascunho ($500 por 30 dias, 50 mi de Marietta)
-- [x] Formulário GHL `aBDuCyZrbqaI32tU4Fy9` criado, com os consentimentos de SMS ajustados
-- [x] Funil GHL `wqrbGF6wEZmMDW1KFk9x` com as etapas `/lvp-299` e `/lvp-299-thank-you`
-- [x] Pixel e evento Lead no head do funil
-- [x] HTML final da LP e da página de obrigado em `lp/`
+- [x] Campanha `120255757614340699` e conjunto `120255757615880699` criados em rascunho na conta `2590014361504349`. Orçamento total de $500, raio de 50 mi de Marietta, cronograma original 18/11 a 18/12/2026.
+- [x] Artes Feed e Stories na biblioteca da conta. Hashes e arquivos no PROJECT.md.
+- [x] CNAME criado na zona `1stqualityfloors.com` da HostGator. GHL validou `promo.1stqualityfloors.com` e vinculou ao funil `wqrbGF6wEZmMDW1KFk9x`.
+- [x] LP original carregando publicamente com formulário em `https://promo.1stqualityfloors.com/lvp-299-page`. Página de obrigado publicada no GHL.
+- [x] Formulário `aBDuCyZrbqaI32tU4Fy9` com Redirect to URL para `https://promo.1stqualityfloors.com/lvp-299-thank-you`. Configuração confirmada após recarregar.
+- [x] Novo Pixel **1st Quality Floors | LVP Leads** (`2611615095987566`) confirmado no Meta, instalado no Head do funil e selecionado no conjunto. Destino **Site** e evento padrão **Lead** salvos.
+- [x] Anúncio **1Q | LVP $2.99 | Feed + Stories** criado em rascunho no conjunto correto. Página **1st Quality Floors Company** e Instagram **@1stqualityfloorscompany** aparecem selecionados.
+- [x] Gleyber autorizou o início da campanha no chat.
 
-## Falta
-1. [ ] **Domínio:** no GHL, adicionar `promo.1qfloors.com` (Settings → Domains); criar o CNAME `promo` na HostGator; selecionar o domínio no funil. *(precisa de login do Gleyber na HostGator)*
-2. [ ] **Página da LP:** etapa `/lvp-299` → Create from blank → elemento Custom Code → colar `lp/LP-colar-no-GHL.html` → salvar e publicar.
-3. [ ] **Página de obrigado:** etapa `/lvp-299-thank-you` → Custom Code → colar `lp/ThankYou-colar-no-GHL.html` → salvar e publicar.
-4. [ ] **Formulário:** On Submit → Redirect URL `https://promo.1qfloors.com/lvp-299-thank-you`.
-5. [ ] **Pixel na conta de anúncios:** atribuir o Pixel 674668794633920 à conta 2590014361504349 (exige a chave de acesso do Gleyber no Business Suite) **ou** criar um Pixel novo na própria conta via API e trocar o ID no head do funil.
-6. [ ] **Testar:** abrir a LP, enviar o formulário de teste, conferir se o contato cai no GHL e se o Lead dispara no Pixel.
-7. [ ] **Meta:** trocar o conjunto para destino WEBSITE com promoted_object {pixel_id, custom_event_type: LEAD}; se não der para editar, criar um conjunto novo na mesma campanha.
-8. [ ] **Anúncio:** criativo com as 2 artes (feed e stories), link `https://promo.1qfloors.com/lvp-299`, 2 textos, 3 títulos, CTA GET_QUOTE. Mostrar a prévia ao Gleyber.
-9. [ ] **Cartão** cadastrado na conta de anúncios. *(Gleyber)*
-10. [ ] **Descartar** a campanha rascunho antiga `120255757570260699`. *(pedir confirmação)*
-11. [ ] **Publicar.** *(só com o "ok" do Gleyber)*
-12. [ ] **Até 27/11:** trocar as artes "Offer ends Nov 30" por um novo prazo.
+## Retomar daqui
+1. [ ] **Ativação da conta Meta:** conferir na Visão geral se continuam pendentes **Adicionar forma de pagamento** e **Confirmar** para a Página **1st Quality Floors Company**. O cartão é com Gleyber.
+2. [ ] **Formulário:** substituir os links de privacidade e termos que apontam para `example.com` pelos links oficiais, após verificar as URLs da empresa.
+3. [ ] **Teste de ponta a ponta:** enviar o formulário pela LP pública com dados de teste. Confirmar redirecionamento, contato no GHL e recebimento de PageView e Lead para o Pixel `2611615095987566` no Gerenciador de Eventos.
+4. [ ] **Completar o anúncio existente:** usar as duas artes por posicionamento (Feed 4:5 e Stories 9:16), URL pública conferida `https://promo.1stqualityfloors.com/lvp-299-page`, 2 textos, 3 títulos e CTA GET_QUOTE. Mostrar a prévia ao Gleyber.
+5. [ ] **Veicular a campanha correta:** conferir orçamento de $500 total e cronograma no Meta, pois a data de início original era 18/11/2026. Depois dos testes e da prévia, publicar somente os itens da campanha `120255757614340699` e verificar o status no Meta.
+6. [ ] **Rascunho duplicado:** descartar a campanha `120255757570260699` somente com confirmação específica do Gleyber.
+7. [ ] **Até 27/11:** trocar as artes “Offer ends Nov 30” por um novo prazo.
 
 ## Automação (depois)
 - Workflow no GHL: gatilho "Form submitted" (1Q LVP 2.99 - LP) → tag "LVP 2.99" → SMS e e-mail imediato ao cliente → notificação interna para ligar em até 5 minutos.
